@@ -23,11 +23,23 @@
 
 <template>
     <section class="testimonials">
-        <div>
+        <div
+            v-for="(testimonial, index) in testimonials"
+            :key="index"
+            class="testimonial"
+        >
             <img
-                src="https://place.dog/88/88"
+                class="testimonial__image"
+                src="https://picsum.photos/id/127/1920/1080"
                 alt=""
             />
+            <h2 class="testimonial__reviewer discrete">
+                {{ testimonial.name }},
+                {{ testimonial.company }}
+            </h2>
+            <p class="heading-3">
+                " {{ testimonial.review }} "
+            </p>
         </div>
     </section>
 </template>
