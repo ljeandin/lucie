@@ -1,0 +1,29 @@
+.hero {
+    &__text-wrapper {
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        padding: 0 $spacing;
+        position: sticky;
+        top: 0;
+    }
+
+    &__text {
+        max-width: 40 * $spacing;
+    }
+
+    &__scroll-nudge {
+        // Make texte appear at the bottom of the screen with a padding
+        // while making sure hero text stays centered on page
+        position: absolute;
+        top: calc(100vh - 3 * $spacing);
+        transform: translateY(-100%);
+    }
+
+    &__image {
+        position: relative;
+    }
+}

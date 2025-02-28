@@ -1,0 +1,28 @@
+$space-mono: "Space Mono", monospace;
+$instrument-serif: "Instrument Serif", serif;
+
+body {
+    font-family: $space-mono;
+    font-size: 2 * $spacing;
+    color: $color-primary;
+    font-weight: 400;
+    font-style: normal;
+}
+
+h1,
+h2,
+h3,
+h4 {
+    font-size: 2 * $spacing;
+}
+
+.heading-1 {
+    font-family: $instrument-serif;
+    font-size: 6 * $spacing;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.discrete {
+    color: $color-tertiary;
+}
