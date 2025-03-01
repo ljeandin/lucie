@@ -1,7 +1,10 @@
 .hero {
+    position: relative;
+    top: $header-height;
+
     &__text-wrapper {
-        height: 100vh;
-        height: 100svh;
+        height: calc(100vh - $header-height);
+        height: calc(100svh - $header-height);
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -9,7 +12,21 @@
         text-align: center;
         padding: 0 $spacing;
         position: sticky;
-        top: 0;
+        top: $header-height;
+
+        &::after {
+            content: "";
+            display: block;
+            width: 100%;
+            height: 100%;
+            background: $color-secondary;
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            z-index: -1;
+        }
     }
 
     &__text {
@@ -20,8 +37,8 @@
         // Make texte appear at the bottom of the screen with a padding
         // while making sure hero text stays centered on page
         position: absolute;
-        top: calc(100vh - 3 * $spacing);
-        top: calc(100svh - 3 * $spacing);
+        top: calc(100vh - $header-height - 3 * $spacing);
+        top: calc(100svh - $header-height - 3 * $spacing);
         transform: translateY(-100%);
     }
 
