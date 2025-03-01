@@ -13,7 +13,7 @@
         </div>
         <img
             class="hero__image"
-            src="/public/images/hero_image.png"
+            src="@/assets/images/hero_image.png"
             alt="Lucie sourit, elle a une main sur son ordinateur, et l'autre qui salue le visiteur"
         />
     </section>
