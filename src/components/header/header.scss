@@ -17,6 +17,9 @@
         line-height: 1;
         color: currentColor;
         text-decoration: none;
+        &:hover {
+            font-weight: 600;
+        }
     }
 }
 

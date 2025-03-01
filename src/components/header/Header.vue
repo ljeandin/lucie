@@ -10,9 +10,9 @@
 
             <a
                 class="header__link"
-                href="0636516327"
+                href="mailto:luciejeandin@gmail.com"
             >
-                Contactez-moi
+                luciejeandin@gmail.com
             </a>
         </nav>
     </header>
