@@ -10,7 +10,6 @@
     background: $color-secondary;
     position: relative;
     z-index: 0;
-    scroll-snap-align: start;
     scroll-margin: $header-height;
 }
 
@@ -24,6 +23,9 @@
     align-items: center;
     justify-content: center;
     text-align: center;
+    &:last-child {
+        margin-right: 4 * $spacing;
+    }
 
     &__image {
         width: 8 * $spacing;
