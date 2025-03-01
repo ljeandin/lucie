@@ -19,3 +19,10 @@
         text-decoration: none;
     }
 }
+
+@media (min-width: $screen-md) {
+    .header {
+        background: $color-secondary;
+        z-index: 1;
+    }
+}

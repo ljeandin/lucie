@@ -1,7 +1,6 @@
 .testimonials {
     margin-top: calc($header-height + 12 * $spacing);
     margin-bottom: 4 * $spacing;
-    margin-bottom: 200vh; //temporary, to be able to scroll past testimonials
     //Use padding to make sure the native scrollbar isn't stuck to the testimonials
     padding-bottom: 4 * $spacing;
     display: flex;
@@ -14,7 +13,7 @@
 
 .testimonial {
     width: 66%;
-    max-width: 35 * $spacing;
+    max-width: 45 * $spacing;
     margin-left: 4 * $spacing;
     flex-shrink: 0;
     display: flex;
@@ -35,5 +34,26 @@
 
     &__reviewer {
         margin-bottom: $spacing;
+    }
+}
+
+@media (min-width: $screen-md) {
+    .testimonials {
+        margin-top: 4 * $spacing;
+    }
+}
+
+@media (min-width: $screen-lg) {
+    .testimonials {
+        justify-content: center;
+    }
+    .testimonial {
+        flex-shrink: 1;
+    }
+}
+
+@media (min-width: $screen-xl) {
+    .testimonials {
+        margin-top: 6 * $spacing;
     }
 }

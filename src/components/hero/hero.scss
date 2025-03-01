@@ -6,7 +6,6 @@
         height: calc(100vh - $header-height);
         height: calc(100svh - $header-height);
         display: flex;
-        flex-direction: column;
         justify-content: center;
         align-items: center;
         text-align: center;
@@ -44,5 +43,48 @@
 
     &__image {
         position: relative;
+        max-width: 40 * $spacing;
+    }
+}
+
+@media (min-width: $screen-md) {
+    .hero {
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: center;
+        align-items: center;
+        padding: 0 3 * $spacing;
+        top: 0;
+        height: 100vh;
+        height: 100svh;
+
+        &__text-wrapper {
+            width: 70%;
+            max-width: 60 * $spacing;
+            text-align: left;
+            position: relative;
+            padding: 0;
+            flex-direction: column;
+            align-items: flex-start;
+        }
+
+        &__text {
+            max-width: none;
+        }
+
+        &__scroll-nudge {
+            position: static;
+            margin-top: $spacing;
+            transform: none;
+        }
+
+        &__image {
+            flex-shrink: 1;
+            width: 30%;
+            max-width: none;
+            max-height: 70 * $spacing;
+            object-fit: contain;
+            padding-top: $header-height;
+        }
     }
 }
