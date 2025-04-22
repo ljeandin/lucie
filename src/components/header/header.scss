@@ -17,6 +17,7 @@
         line-height: 1;
         color: currentColor;
         text-decoration: none;
+
         &:hover {
             font-weight: 600;
         }
@@ -27,5 +28,11 @@
     .header {
         background: $color-secondary;
         z-index: 1;
+        &__link {
+            margin-right: 4 * $spacing;
+            &:first-of-type {
+                margin-right: auto;
+            }
+        }
     }
 }
